@@ -1,0 +1,166 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+/* Styling body */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Overall styling for header */
+.header {
+    display: flex;
+    background-color: #1f2937;
+    flex-direction: column;
+}
+
+/* Styling width of header */
+.header-tiny {
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* Styling of navbar */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    margin-bottom: 60px;
+
+}
+
+/* Styling Logo */
+.logo {
+    font-family: 'Fugaz One', cursive;
+    font-size: 24px;
+    color: #f9faf8;
+    text-decoration: none;
+}
+
+/* Styling unordered list */
+.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 60px;
+}
+
+/* Styling anchor tags of nav */
+.links a {
+    text-decoration: none;
+    font-size: 18px;
+    color: #afb1b4;
+    font-family: 'Fugaz One', cursive;
+}
+
+.links a:hover {
+    color: orangered;
+}
+
+/* Styling Hero section */
+.hero {
+    display: flex;
+    gap: 50px;
+    height: 250px;
+    margin-bottom: 20px;
+}
+
+
+.hero-left h1 {
+    font-size: 48px;
+    font-weight: bolder;
+    margin: 0;
+    color: #f9faf8;
+}
+
+.hero-left p {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.hero-left button {
+    background-color: #3882f6;
+    color: #f9faf8;
+    padding: 6px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    border: 1px solid #3882f6;
+    border-radius: 5px;
+}
+
+.hero-left button:hover {
+    color: #3882f6;
+    background-color: #f9faf8;
+    cursor: pointer;
+    border-color: #f9faf8;
+}
+
+.hero-right img {
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
+}
+
+/* Styling main section */
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    margin-bottom: 80px;
+}
+
+.info h2 {
+    margin: 60px 0;
+    text-align: center;
+}
+
+.features {
+    display: flex;
+    gap: 30px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.card {
+    text-align: center;
+    flex: 1;
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+}
+
+.test {
+    background-color: #e5e7eb;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.test img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+.test .test-name {
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+}
