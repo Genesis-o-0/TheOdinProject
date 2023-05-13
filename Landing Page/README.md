@@ -1,8 +1,8 @@
-# Landing Page project based on the Odin Project
+# Landing Page project based on The Odin Project
 
 ## made by: M.A.L aka Genesis
 
-### Image attribution: Image by pch.vector on Freepik
+### Image attribution: Hero image by pch.vector on Freepik
 
 ### All animated icons created by Freepik
 
