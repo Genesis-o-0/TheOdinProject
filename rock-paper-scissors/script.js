@@ -9,3 +9,7 @@ const getComputerChoice = function () {
     return "scissors";
   }
 };
+// Get user Choice function
+const getPlayerChoice = function () {
+  return prompt('"rock", "paper", or "scissors"').toLowerCase();
+};
