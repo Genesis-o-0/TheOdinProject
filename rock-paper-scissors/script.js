@@ -47,3 +47,15 @@ function playRound(playerSelection, computerSelection) {
     }
   }
 }
+// Game function (5 Rounds)
+
+function game() {
+  console.log(playRound(playerSelection, computerSelection));
+  console.log(playRound(playerSelection, computerSelection));
+  console.log(playRound(playerSelection, computerSelection));
+  console.log(playRound(playerSelection, computerSelection));
+  console.log(playRound(playerSelection, computerSelection));
+}
+
+// Starting game
+game();
