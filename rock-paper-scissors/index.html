@@ -4,9 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>Rock-Paper-Scissors</title>
   </head>
   <body>
+    <header>
+      <h1>Rock Paper Scissors</h1>
+    </header>
+    <main>
+      <div class="scoreboard">
+        <p class="user">User</p>
+        <p class="score">
+          <span class="user-score">0</span>:<span class="com-score">0</span>
+        </p>
+        <p class="com">Comp</p>
+      </div>
+      <p class="who-win">First to score 5 points wins the game</p>
+      <div class="cards">
+        <div class="card" id="rock">✊</div>
+        <div class="card" id="paper">✋</div>
+        <div class="card" id="scissors">✌️</div>
+      </div>
+    </main>
+    <footer>
+      <p class="contact-me">
+        Copyright © 2023 Genesis-o-0<a
+          href="https://github.com/Genesis-o-0"
+          target="_blank"
+          ><img src="./assets/github.png" alt="github icon"
+        /></a>
+      </p>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
