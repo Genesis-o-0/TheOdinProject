@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: rgb(228, 228, 228);
+  font-family: "Dancing Script", cursive;
+}
+h1 {
+  text-align: center;
+  padding: 30px;
+}
+#grid-container {
+  display: flex;
+  width: 600px;
+  height: auto;
+  flex-wrap: wrap;
+  border: 1px solid black;
+}
+
+.grid {
+  background-color: white;
+  border: 0.5px solid rgb(163, 163, 163);
+}
+
+.main {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+
+  height: 100%;
+}
+
+button {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 100%;
+}
+.active {
+  background-color: coral;
+  color: white;
+}
+.color-picker__container {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#color-picker {
+  outline: none;
+  border: none;
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.message {
+  font-size: 22px;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap"
+    />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div class="main">
+      <div class="buttons">
+        <div class="color-picker__container">
+          <input type="color" id="color-picker" />
+        </div>
+        <button id="color-blinding">color blending</button>
+        <button id="eraser">eraser</button>
+        <button id="reset">reset</button>
+        <p id="grid-size_text"></p>
+        <input type="range" id="grid-size" max="60" min="16" value="16" />
+        <label for="grid-size" class="message"> Choose Grid size </label>
+      </div>
+      <div id="grid-container"></div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
