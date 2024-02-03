@@ -28,15 +28,18 @@ document.body.onmouseup = () => {
 
 function createColumnsOfDivs(numberOfColumns) {
   const listOfDivs = [];
+  const columnWidth = gridContainer.clientWidth / numberOfColumns;
+  const columnHeight = gridContainer.clientHeight / numberOfColumns;
   for (let column = 0; column < numberOfColumns; column++) {
     const div = document.createElement("div");
     div.classList.add("grid");
-    div.style.width = `${gridContainer.clientWidth / numberOfColumns}px`;
-    div.style.height = `${gridContainer.clientWidth / numberOfColumns}px`;
+    div.style.width = `${columnWidth}px`;
+    div.style.height = `${columnHeight}px`;
     div.addEventListener("mousedown", changeGridColor);
     div.addEventListener("mouseover", changeGridColor);
     listOfDivs.push(div);
   }
+
   return listOfDivs;
 }
 function changeGridColor(event) {
@@ -57,6 +60,8 @@ function changeGridColor(event) {
 }
 
 function createGridOfDivs(numberOfRows, numberOfColumns) {
+  console.log(numberOfColumns);
+  console.log(numberOfRows);
   for (let row = 0; row < numberOfRows; row++) {
     const rowOfDivs = createColumnsOfDivs(numberOfColumns);
     gridContainer.append(...rowOfDivs);
@@ -95,7 +100,6 @@ gridSizeInput.onchange = (event) => {
   currentSize = parseInt(event.target.value);
   gridSizeText.innerText = `${currentSize} x ${currentSize}`;
   resetGrid();
-  createGridOfDivs(currentSize, currentSize);
 };
 window.onload = () => {
   createGridOfDivs(currentSize, currentSize);

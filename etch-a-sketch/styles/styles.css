@@ -15,14 +15,17 @@ h1 {
 #grid-container {
   display: flex;
   width: 600px;
-  height: auto;
+  height: 600px;
   flex-wrap: wrap;
-  border: 1px solid black;
 }
-
+.container {
+  padding: 8px;
+  box-shadow: 0 0 5px grey ;
+  border-radius: 10px;
+}
 .grid {
   background-color: white;
-  border: 0.5px solid rgb(163, 163, 163);
+  border: 0.5px solid rgb(232, 232, 232);
 }
 
 .main {
