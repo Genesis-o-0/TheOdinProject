@@ -3,6 +3,9 @@ const result = document.querySelector(".result_display");
 function getValue(value) {
   let operator;
   if (isNaN(value)) {
+    if(result.value.length >= 3) {
+        operate()
+    }
     if (isNaN(result.value[result.value.length - 1])) {
       operator = handleOperatorPrecedence(
         result.value[result.value.length - 1],
@@ -17,9 +20,6 @@ function getValue(value) {
     }
   } else {
     result.value += value;
-    if (result.value.length >= 3) {
-      result.value = handleOperate(result.value);
-    }
   }
 }
 function clearDisplay() {
@@ -90,5 +90,7 @@ function handleDelete() {
 }
 
 function operate() {
-  handleOperate(result.value);
+  if (result.value.length >= 3) {
+    result.value = handleOperate(result.value);
+  }
 }

@@ -11,7 +11,13 @@
       <div class="calculator">
         <form>
           <div class="result">
-            <input type="text" name="display" placeholder="0" class="result_display" readonly />
+            <input
+              type="text"
+              name="display"
+              placeholder="0"
+              class="result_display"
+              readonly
+            />
           </div>
           <div>
             <input type="button" value="AC" onclick="clearDisplay()" />
@@ -40,7 +46,7 @@
           <div>
             <input type="button" value="00" onclick="getValue(this.value)" />
             <input type="button" value="0" onclick="getValue(this.value)" />
-            <input type="button" value="=" class="equal" onclick="operate()"/>
+            <input type="button" value="=" class="equal" onclick="operate()" />
           </div>
         </form>
       </div>
