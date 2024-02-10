@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <form>
+          <div class="result">
+            <input type="text" name="display" placeholder="0" class="result_display" readonly />
+          </div>
+          <div>
+            <input type="button" value="AC" onclick="clearDisplay()" />
+            <input type="button" value="DE" />
+            <input type="button" value="." onclick="getValue(this.value)" />
+            <input type="button" value="/" onclick="getValue(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="7" onclick="getValue(this.value)" />
+            <input type="button" value="8" onclick="getValue(this.value)" />
+            <input type="button" value="9" onclick="getValue(this.value)" />
+            <input type="button" value="*" onclick="getValue(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="4" onclick="getValue(this.value)" />
+            <input type="button" value="5" onclick="getValue(this.value)" />
+            <input type="button" value="6" onclick="getValue(this.value)" />
+            <input type="button" value="-" onclick="getValue(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="1" onclick="getValue(this.value)" />
+            <input type="button" value="2" onclick="getValue(this.value)" />
+            <input type="button" value="3" onclick="getValue(this.value)" />
+            <input type="button" value="+" onclick="getValue(this.value)" />
+          </div>
+          <div>
+            <input type="button" value="00" onclick="getValue(this.value)" />
+            <input type="button" value="0" onclick="getValue(this.value)" />
+            <input type="button" value="=" class="equal" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
