@@ -15,7 +15,7 @@
           </div>
           <div>
             <input type="button" value="AC" onclick="clearDisplay()" />
-            <input type="button" value="DE" />
+            <input type="button" value="DE" onclick="handleDelete()" />
             <input type="button" value="." onclick="getValue(this.value)" />
             <input type="button" value="/" onclick="getValue(this.value)" />
           </div>
@@ -40,7 +40,7 @@
           <div>
             <input type="button" value="00" onclick="getValue(this.value)" />
             <input type="button" value="0" onclick="getValue(this.value)" />
-            <input type="button" value="=" class="equal" />
+            <input type="button" value="=" class="equal" onclick="operate()"/>
           </div>
         </form>
       </div>

@@ -88,3 +88,7 @@ function handleDelete() {
   resultArray.splice(resultArray.length - 1, 1);
   result.value = resultArray.join("");
 }
+
+function operate() {
+  handleOperate(result.value);
+}
