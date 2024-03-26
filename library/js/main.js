@@ -1,6 +1,6 @@
 import BooksModel from "./BooksModel.js";
 import BooksView from "./BooksView.js";
-import BooksController from "./App.js";
+import BooksController from "./Controller.js";
 
 const root = document.getElementById("app");
 const model = new BooksModel();
